@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header class="text-4xl text-center my-5 font-bold text-teal-500">
+        <h1>Let's Get Some <span class="text-teal-900">Money</span></h1>
+    </header>
+    <main class="mt-10">
+        <section class="bg-gray-100 md:w-9/12 w-11/12 mx-auto rounded-xl">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 p-16">
+                <div class="bg-white rounded-xl p-10 shadow-xl">
+                    <h1 class="font-bold mb-3 text-2xl text-gray-600">Last Deposite</h1>
+                    <h2 class="font-bold mb-3 text-3xl">$<span id="d-amount">00</span></h2>
+                </div>
+                <div class="bg-white rounded-xl p-10 shadow-xl border-2 border-black">
+                    <h1 class="font-bold mb-3 text-2xl text-gray-600">Last Widthdraw</h1>
+                    <h2 class="font-bold mb-3 text-3xl">$<span id="lastWid">00</span></h2>
+                </div>
+                <div class="bg-white rounded-xl p-10 shadow-xl">
+                    <h1 class="font-bold mb-3 text-2xl text-gray-600">Total Blance</h1>
+                    <h2 class="font-bold mb-3 text-3xl">$<span id="totalBlance">850</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-100 p-20 md:w-9/12 w-11/12 mx-auto my-10 rounded-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-gradient-to-l from-gray-700 to-black p-10 rounded-lg">
+                    <h1 class="text-2xl mb-4 font-bold text-white">Deposite Now</h1>
+                    <input id="deposite-field" class="focus:outline-none md:w-10/12 w-full ms-5 focus:border-2 border-blue-300 my-4 h-10 rounded-lg py-2 px-3" type="text" name="" placeholder="Deposite Amount">
+                    <button id="dp-btn" class="bg-gradient-to-b from-white to-gray-400 py-3 px-5 text-black font-semibold text-lg rounded-lg inline">Deposite</button>
+                </div>
+
+                <div class="bg-gradient-to-l from-gray-700 to-black p-10 rounded-lg">
+                    <h1 class="text-2xl mb-4 font-bold text-white">Widthdraw Now</h1>
+                    <input id="wid-field" class="focus:outline-none md:w-10/12 ms-5 w-full focus:border-2 border-blue-300 my-4 h-10 rounded-lg py-2 px-3" type="text" name="" placeholder="Widthdraw Amount">
+                    <button id="wid-btn" class="bg-gradient-to-b from-white to-gray-400 py-3 px-5 text-black font-semibold text-lg rounded-lg inline">Widthdraw</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="bg-blue-100 p-10 md:w-9/12 w-11/12 mx-auto my-20 rounded-xl grid grid-cols-2 gap-5">
+            <div id="history">
+                <div id="deposite-history" class="grid grid-cols-6">
+                    
+                </div>
+            </div>
+            <div id="history">
+                <div id="widthdraw-history" class="grid grid-cols-6">
+                   
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <script src="page.js"></script>
+</body>
+</html>
